@@ -7,7 +7,7 @@
 .form
 {
   width:100%;
-  height:auto;
+  height:100Vh;
   background-size: cover;
  background:linear-gradient(45deg,rgb(10, 10, 10) 1%, rgb(79, 79, 79) 10% , rgb(158, 157, 157) 50% , rgb(168, 169, 168) 4%);;
  display:flex;}
