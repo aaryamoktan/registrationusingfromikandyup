@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.form
+{
+  width:100%;
+  height:auto;
+  background-size: cover;
+ background:linear-gradient(45deg,rgb(10, 10, 10) 1%, rgb(79, 79, 79) 10% , rgb(158, 157, 157) 50% , rgb(168, 169, 168) 4%);;
+ display:flex;}
+
+.form p{
+  color:rgb(252, 10, 10);
+  font-size: 20px;
+}
+.form .form_info
+{
+  position:relative;
+  width:40%;
+  height:auto;
+}
+.form .form_info img{
+  position:relative;
+  width:85%;
+  top:25%;
+  left:40%;
+  height:auto;
+  border-radius: 20PX;
+  box-shadow: 1PX 1PX 20PX black;
+}
+.form .form_registration
+{
+  position:relative;
+  height:auto;
+  width:60%;
+}
+.form .form_registration .form-inputs
+{
+  position:relative;
+  width:30%;
+  height:50%;
+  margin-top:15%; 
+  top:10%;
+  left:40%;
+  margin-bottom: 30%;
+}
+.form .form_registration .form-inputs label{
+  color:white;
+  font-size: 25px;
+  font-family: Georgia, serif;
+}
+.form .form_registration .form-inputs input
+{
+  width:79%;
+  height:3.5vh;
+  border-radius: 5px;
+  background:transparent;
+  border:1px solid rgb(228, 223, 223);
+  margin-bottom:15px;
+}
+.form .form_registration .form-inputs button
+{
+  position:relative;
+  background:transparent;
+  border:1px solid white;
+  width:30%;
+  color:white;
+  font-size: 20px;
+  margin-left:25%;
+}
+@media screen and (max-width:767px) {
+  .form
+{
+  width:100%;
+  height:auto;
+  background-size: cover;
+ display:block;}
+ .form .form_info
+{
+  position:relative;
+  width:100%;
+  height:auto;
+}
+.form .form_info img{
+  position:relative;
+  margin-top:10%;
+  left:7%;
+}
+.form .form_registration
+{
+  position:relative;
+  height:70vh;
+  width:100%;
+}
+.form .form_registration .form-inputs
+{
+  position:relative;
+  width:70%;
+  height:auto;
+  margin-top:15%; 
+  margin-top:10%;
+  left:20%;
+  margin-bottom: 30%;
+}
+.form .form_registration .form-inputs label{
+  color:white;
+  font-size: 20px;
+  font-family: Georgia, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form .form_registration .form-inputs button
+{
+  position:relative;
+  background:transparent;
+  border:1px solid white;
+  width:30%;
+  color:white;
+  font-size: 20px;
+  margin-left:25%;
+  margin-top:5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
